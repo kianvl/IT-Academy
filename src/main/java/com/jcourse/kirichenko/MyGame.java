@@ -5,10 +5,17 @@ import java.util.Scanner;
 
 public class MyGame {
     public static void main(String[] args) {
-        int i = new Random().nextInt() % 100;
-        i++;
+        Random randomNumber = new Random();
+        int i = 1 + randomNumber.nextInt(100);
         System.out.println(i);
-        Scanner is = new Scanner(System.in);
-        ii =
+        Scanner scanner = new Scanner(System.in);
+        int j;
+        for (int k=0; k<8; k++) {
+            j = scanner.nextInt();
+            if (GameLogic.compare(i, j)) {
+                System.out.println("Yes!");
+                return;
+            }
+        }
     }
 }
