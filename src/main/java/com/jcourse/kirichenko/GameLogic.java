@@ -1,3 +1,7 @@
+/**
+ * Game logic for the best console game.
+ */
+
 package com.jcourse.kirichenko;
 
 class GameLogic {
